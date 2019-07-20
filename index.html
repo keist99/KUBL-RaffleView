@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>KUBL Survey Raffle Service</title>
+	<meta name="robots" content="noindex">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link type="text/css" rel="stylesheet" href="viewMain.css">
+	<link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css">
+</head>
+<body>
+	<div id="main">
+		<div id="title" style="text-align: center;">
+			<h2>전국 대학생 블록체인 인식 설문조사</h2>
+			<h1>경품 추첨</h1>
+		</div>
+		<hr>
+		<br>
+		<div id="release" style="text-align: center;">
+			<!-- 배포 시작 -->
+			<br>
+			<p class="textbox">응답자 수 입력</p>
+			<div>
+				<input id="number" type="text" style="outline: none; text-align: center;">
+			</div>
+			<br>
+			<br>
+			<br>
+			<button onclick="release()"><img src="./files/release.png" width="50%"></button>
+		</div>
+		<div id="start" style="display: none; text-align: center;">
+			<!-- 추첨 시작 -->
+			<br>
+			<button onclick="updateFirst()"><img src="./files/update.png" width="50%"></button>
+			<br>
+			<br>
+			<button onclick="resultFirst()"><img src="./files/result.png" width="50%"></button>
+		</div>
+		<div id="first" style="display: none; text-align: center;">
+			<!-- 1등 -->
+			<p class="miniTitle">1등</p>
+			<p class="textbox"></p>
+			<br>
+			<br>
+			<button onclick="updateSecond()"><img src="./files/update.png" width="50%"></button>
+			<br>
+			<br>
+			<button onclick="resultSecond()"><img src="./files/result.png" width="50%"></button>
+		</div>
+		<div id="second" style="display: none; text-align: center;">
+			<!-- 2등 -->
+			<p class="miniTitle">2등</p>
+			<p class="textbox"></p>
+			<br>
+			<br>
+			<p class="textbox">당첨을 축하드립니다.<br>당첨자 분들께는 개별 연락을 드리겠습니다.</p>
+			<br>
+			<br>
+			<button onclick="updateThird()"><img src="./files/update.png" width="50%"></button>
+			<br>
+			<br>
+			<button onclick="resultThird()"><img src="./files/result.png" width="50%"></button>
+		</div>
+		<div id="third" style="display: none; text-align: center;">
+			<!-- 3등 -->
+			<p class="miniTitle">3등</p>
+			<p class="textbox"></p>
+		</div>
+	</div>
+	<img id="kubl-logo" src="./files/kubl.png">
+
+	<script>
+		function elementShow(element) {
+			var el = document.getElementById(element);
+			el.style.display = "block";
+		}
+		function elementHide(element) {
+			var el = document.getElementById(element);
+			el.style.display = "none";
+		}
+
+		// web3.js 연결 코드 자리
+
+		// 응모자수: Number(document.getElementById("number").value)
+
+		function release() {
+			// 컨트랙트 배포
+			alert('배포가 완료되었습니다.');
+			elementHide("release");
+			elementShow("start");
+		}
+		function updateFirst() {
+			// Update for 1등
+			alert('추첨이 완료되었습니다.');
+		}
+		function resultFirst() {
+			// Call for 1등
+			var el = document.getElementsByClassName("textbox");
+			el[1].innerHTML = "1등 당첨자"; // 당첨자 명단 넣기
+
+			elementHide("start");
+			elementShow("first");
+		}
+		function updateSecond() {
+			// Update for 2등
+			alert('추첨이 완료되었습니다.');
+		}
+		function resultSecond() {
+			// Call for 2등
+			var el = document.getElementsByClassName("textbox");
+			el[2].innerHTML = "2등 당첨자"; // 당첨자 명단 넣기
+
+			elementHide("first");
+			elementShow("second");
+		}
+		function updateThird() {
+			// Update for 3등
+			alert('추첨이 완료되었습니다.');
+		}
+		function resultThird() {
+			// Call 50회 for 3등
+			var el = document.getElementsByClassName("textbox");
+			el[4].innerHTML = "3등 당첨자"; // 당첨자 명단 넣기
+
+			elementHide("second");
+			elementShow("third");
+		}
+	</script>
+</body>
+</html>

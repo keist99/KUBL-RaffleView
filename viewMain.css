@@ -1,0 +1,38 @@
+body {
+	font-size: 12px;
+ 	font-family: 'NanumSquare', sans-serif;
+	height: 100%;
+	margin: 0px 0px 0px 0px;
+	background-color: #f3efee;
+}
+#main {
+	border: 1px solid #862633;
+	margin-top: 60px;
+	margin-bottom: 60px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 15px 15px 30px 15px;
+	width: 70%;
+	background-color: #ffffff;
+}
+#main a {
+	text-decoration: none;
+	color: black;
+}
+#main button {
+	border: none;
+	background-color: white;
+	outline: none;
+}
+#main .miniTitle {
+	font-size: 40px;
+}
+#main .textbox {
+	font-size: 15px;
+}
+#kubl-logo {
+	width: 15%;
+	position: absolute;
+	right: 10px;
+	bottom: 10px;
+}
