@@ -1,6 +1,9 @@
 # 당첨자 추첨 페이지 프론트엔드
 
 ![Markup][markup-html]
+<br>
+![Participants][participants-solo]
+<br>
 [![Group Project][kubl-image]][kubl-url]
 
 > 고려대학교 블록체인학회 KUBL에서 사용하기 위해 만든 당첨자 추첨 페이지입니다.
@@ -21,3 +24,4 @@
 [kubl-image]: https://img.shields.io/badge/Group-KUBL-red
 [kubl-url]: https://www.kubl.org
 [markup-html]: https://img.shields.io/badge/Markup-HTML-orange
+[participants-solo]: https://img.shields.io/badge/Participants-Solo%20Project-7aa3cc
