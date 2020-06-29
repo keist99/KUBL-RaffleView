@@ -1,18 +1,18 @@
 # 당첨자 추첨 페이지 프론트엔드
 
-![Markup][markup-html]
+![markup-html][markup-html]
 <br>
-![Participants][participants-solo]
+![participants-solo][participants-solo]
 <br>
-[![Group Project][kubl-image]][kubl-url]
+[![group-kubl][kubl-image]][kubl-url]
 
 > 고려대학교 블록체인학회 KUBL에서 사용하기 위해 만든 당첨자 추첨 페이지입니다.
 
-## 스크린샷
+### 스크린샷
 
 <img src="documents/screenshot.png" height="400px">
 
-## 라이선스 및 공동체 수정
+### 라이선스 및 공동체 수정
 
 이곳은 개인 프로젝트 백업을 목적으로 하는 저장소입니다.
 
