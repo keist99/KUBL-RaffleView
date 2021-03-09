@@ -3,8 +3,6 @@
 ![markup-html][markup-html]
 <br>
 ![participants-solo][participants-solo]
-<br>
-[![group-kubl][kubl-image]][kubl-url]
 
 > 고려대학교 블록체인학회 KUBL에서 사용하기 위해 만든 당첨자 추첨 페이지입니다.
 
@@ -25,7 +23,5 @@
     * 깃허브 Pull Request를 받지 않습니다.
 
 <!-- Image definitions -->
-[kubl-image]: https://img.shields.io/badge/Group-KUBL-red
-[kubl-url]: https://www.kubl.org
 [markup-html]: https://img.shields.io/badge/Markup-HTML-orange
 [participants-solo]: https://img.shields.io/badge/Participants-Solo%20Project-7aa3cc
